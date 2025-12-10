@@ -1,8 +1,6 @@
 #include <iostream>
-int main() {
-  int n;
-  std::cin >> n;
 
+void fizz_buzz(int n) {
   for (int i = 1; i <= n; ++i) {
     if (i % 3 == 0 && i % 5 == 0) {
       std::cout << "FizzBuzz" << std::endl;
@@ -14,6 +12,13 @@ int main() {
       std::cout << i << std::endl;
     }
   }
+}
+
+int main() {
+  int n;
+  std::cin >> n;
+
+  fizz_buzz(n);
 
   return 0;
 }
